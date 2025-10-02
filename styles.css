@@ -1,153 +1,173 @@
-#headerText{
-    background-color: 2D2E2C;
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 4vh;
-    font-weight: bold;
-    padding: 10px;
-    text-align: center;
-    
+#headerText {
+  background-color: #2d2e2c;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 4vh;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
 }
 
-#menuText{
-    background-color: EBEFBF;
-    color: black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 4vh;
-    font-weight: bold;
-    padding: 10px;
-    text-align: center;
+#menuText {
+  background-color: #ebefbf;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 4vh;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
 }
 
-
-
-header{
-    display:grid;
+header {
+  display: grid;
 }
 
-
-header > div:nth-child(2){
-    position:relative;
+header > div:nth-child(2) {
+  position: relative;
 }
 
-
-.bannerLogo{
-    position:absolute;
-    max-width:50%;
-    left:25%;
-
+.bannerLogo {
+  position: absolute;
+  max-width: 50%;
+  left: 25%;
 }
 
-.bannerPic{
-    opacity: 0.5;
-    max-width: 100%;
-    height: auto;
+.bannerPic {
+  opacity: 0.5;
+  max-width: 100%;
+  height: auto;
 }
 
-
-.container{
-    display:flex;
-    flex-wrap: wrap;
-    grid-auto-flow: row;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  grid-auto-flow: row;
 }
 
-.container > div{
-
-    flex: 1;
-    min-width: 300px;
-
+.container > div {
+  flex: 1;
+  min-width: 300px;
 }
 
-.contentPic{
-    width:50vw;
-    height: 50vh;
-    object-fit: cover;
-    
+.contentPic {
+  width: 50vw;
+  height: 50vh;
+  object-fit: cover;
 }
 
-#contentText{
-    background-color: EBEFBF;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 3vh;
-    display: flex;
-    padding: 10vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    
+section {
+  transition-property: border;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0;
 }
 
-
-#picInside{
-    max-width: 100%;
+section:hover {
+  border: 10px solid #2d2e2c;
 }
 
-
-footer{
-    padding: 20px;
-    background-color: FEFFF3;
-    display: flex;
-    align-items: center;
-    font-size: 3vh;
-    flex-wrap: wrap;
+#contentText {
+  background-color: #ebefbf;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 3vh;
+  display: flex;
+  padding: 10vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-footer > :first-child{
-    max-width: 10%;
-    height:auto;
+#picInside {
+  max-width: 100%;
 }
 
-.menuContent{
-    display: grid;
-    grid-auto-flow: column;
-    gap: var(--size-3);
-    overflow-x: auto;
-    background-image: url(transparent\ bg.png);
+footer {
+  padding: 20px;
+  background-color: #fefff3;
+  display: flex;
+  align-items: center;
+  font-size: 3vh;
+  flex-wrap: wrap;
 }
 
-.menuContent > div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px;
+footer > :first-child {
+  max-width: 10%;
+  height: auto;
 }
 
-.menuItem{
-    width: 25vh;
-    height: 25vh;
-    object-fit: cover;
-    clip-path: circle();
+.menuContent {
+  display: grid;
+  grid-auto-flow: column;
+  gap: var(--size-3);
+  overflow-x: auto;
+  background-image: url(https://lh3.googleusercontent.com/rd-d/ALs6j_EIsOYoTLMYIIcPuSxNnm6Zr3UiMednDVG5WG5yftgm-qT2_iEI92-EEQXZQlVJ9SxhbS0IrSUJpAxbjDHyJIlQb2akmXixwoXY2AAmxczjNMb1J9ps6LVO6cV9UDPt6FtO-Rns8K6EjQuQft23j7sfSilVzZyDBSPeYtinm4vJ04JqSHs0fdy3aZNDRVA-NjhMlQ6Ife4B_YGTN5u0yzo7LE1-o5zHl70oniHVV1QGypsdO6zsBfk_1BoskQq092n_4KrgCam1pABYIW9Th-uL0U7lvWhqcZb5navGfVPXLEUQO7deTrFh_CoDEO3fiyhOloy2o4GsigOeKyxX_f0-9UBJ9zTNVqQ8uE6c2Rc5cLK-3VOjHi1NruUDzgbBnqoRqgkOYuj6H3ytLbddXb2k4sFvNObwCod6ksg7PC4nUZdT3fY5ybdfGqAIdB9i5Wp9xo3_TJyXjDieeFP8IZcGBGm2VOBrsTqWVD8GXQZDouXEP0HYSbhMo6oSwr0hgT2oeHFElF6Wtj5VUxFu_eR_wFYQNpj29W-9eaPrcSoYTcMmPgvdxLMgeSOnPg7SE344-vYIUiYJnpItnKXEBse09dBdAgPF4VQgxwrjWIYPY7AQ97JMQxZcZYPf4xr3KAkjD7UKNKjodWSyPCNYN7NBRzqUJErYHwaTvuWqa0C7n_SPQ6rQzEzb81PnNHJC6q8sHuENP9Gc02XdU0zMXdgUpPE3--BOpkugYkonox8bTHa9pJxa1FppQTiJn7KsqLWFlPPYakl3pk25ZKCe9l9T8ZhxJt1Pvci4dph60-wTYXmY8q1O6YSidJanW6zNcEusqgr6EyKn8czfDTzAfa9b6dARzx7oZWrIC8YoeAiRSimrGEuWnvlxAgMU7xyEz3FJL938N1mu1qfDHgaW_UakCj0vrA_86nsi3xGBfnT040vK16pLGiIs3ruNX0PXRaZTZXh-PkjxJJf3TvUFb3Geix7PuyO0Bs36baVwPYC-AdPpb2S0WmiCjfW7VMfpVkw1qnAANIDNQF8eD_O5z8wIm57HzXCf5pXYc7Q_t2W0U-1J7Ws-WHA1fzOpe3mGgjdv-XfpTeyUU-R50HfU0CMa1_Rnsj0qVWCQjwTvLkGFHsptT12jxRM=w1920-h1033?auditContext=prefetch);
 }
 
-.menuContent > div > p{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    
+.menuContent tr {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+}
+
+.menuContent tr td {
+  padding: 20px;
+  transition-property: border, padding;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+  transition-delay: 0;
+}
+
+.menuContent tr td:hover {
+  padding: 40px;
+  border: solid #2d2e2c 10px;
+}
+
+.menuItem {
+  width: 25vh;
+  height: 25vh;
+  object-fit: cover;
+  clip-path: circle();
+}
+
+.menuContent tr td p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
-    .container {
-        flex-direction: row;
-    }
+  .container {
+    flex-direction: row;
+  }
 
-    .contentPic{
-        width: 100vw;
-    }
+  .contentPic {
+    width: 100vw;
+  }
 }
 
+a {
+  transition-property: color, background-color;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+  transition-delay: 0;
+}
 
 a:link {
   color: blue;
 }
-
 
 a:visited {
   color: purple;
 }
 
 a:hover {
-  color: red;
+  color: white;
+  background-color: #2d2e2c;
 }
 
 a:active {
